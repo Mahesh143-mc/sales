@@ -1,0 +1,58 @@
+
+/*---buy now section -------*/
+
+.buy-now-section{
+    background: #fc0000;
+    padding: 50px 0;
+    color: #ffff;
+}
+
+.buy-now-section .row .c-1{
+    flex: 3 ;
+}
+
+.buy-now-section .row .c-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-now-section .col h1{
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+
+.buy-now-section .col p{
+    font-size: 20px;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 0.767);
+    line-height: 30px;
+}
+
+.buy-now-section .c-2 .btn{
+    margin-top: 10px ;
+    padding: 20px 40px;
+    border: 2px solid #ffff;
+    background-color: #f4c806;
+    border-radius: 10px;
+    color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .buy-now-section .row .c-1{
+    flex: 1 1 100%;
+}
+
+.buy-now-section .row .c-2{
+    flex: 0 0 90%;
+}
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .buy-now-section .c-2 .btn{
+        padding: 10px 20px;
+    }
+}
+

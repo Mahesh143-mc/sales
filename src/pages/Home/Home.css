@@ -1,0 +1,214 @@
+.bg-image-1{
+    background-image: url('./../../assets/Bg-2.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.features-section{
+    margin: 40px 0;
+}
+
+.features-section .col{
+    margin: 20px 0;
+}
+
+.features-section .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: 100%;
+    padding: 20px 0 2px 0;
+    min-width: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.features-section .card img {
+    max-width: 70px;
+    margin: 0 auto 15px;
+}
+
+.features-section .card-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.features-section .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* imp section -------------------------------*/
+.imp-section {
+    margin: 40px 0 0 0;
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.imp-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #d35400;
+}
+
+.imp-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 90px;
+}
+@media only screen and (max-width: 800px) {
+    .imp-section p {
+    margin-left: 20px;
+}
+}
+
+/* bg fixed ------------------*/
+
+.fixed-bg{
+    background-image: url('./../../assets/Bg-5.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.fixed-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+    z-index: 0;
+}
+
+.fixed-bg h1, .fixed-bg .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.fixed-bg h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.fixed-bg .btn {
+    background-color: #d35400;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fixed-bg .btn:hover {
+    background-color: #e67e22;
+}
+
+@media only screen and (max-width: 800px) {
+.fixed-bg h1 {
+    font-size: 20px;
+
+}
+}
+/* home product section ------------------ */
+
+.home-pro-section {
+    margin: 40px 0;
+}
+
+.home-pro-section .c-1{
+    flex: 1;
+}
+
+.home-pro-section .c-2{
+    flex: 3;
+}
+.home-pro-section h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #d35400;
+}
+
+.home-pro-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.home-pro-section .btn {
+    background-color: #d35400;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.home-pro-section .btn:hover {
+    background-color: #e67e22;
+}
+
+.home-pro-section .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: 100%;
+    padding: 0 ;
+    max-width: 190px;
+    min-width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    overflow: hidden;
+}
+
+.home-pro-section .card img {
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.home-pro-section .card img:hover {
+   transform: scale(1.1);
+   transition: transform 0.3s ease;
+   cursor: pointer;
+}
+
+.home-pro-section .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 10px;
+}
+
+.home-pro-section .c-2 .row{
+    overflow: hidden;
+}

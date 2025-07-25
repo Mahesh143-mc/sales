@@ -1,0 +1,131 @@
+.react-tabs{
+  background: #f9d6fa;
+  min-height: 100vh;
+  max-height: fit-content;
+}
+
+.react-tabs ul{
+  background: #cb35dc;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.react-tabs ul li{
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.react-tabs ul li:hover{
+  background: #f2f5f3;
+}
+
+tr,th{
+  text-align: center;
+}
+
+th{
+  font-size: 23px;
+}
+
+td{
+  font-size: 18px;
+}
+/*order section----------------*/ 
+
+.order-section {
+  padding: 20px;
+  
+}
+
+.order-section .card{
+  margin: 30px 0 ;
+}
+.adr {
+  margin-bottom: 20px;
+}
+
+.simple-details {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #333;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.simple-details p {
+  margin: 8px 0;
+}
+
+.simple-details strong {
+  color: #555;
+  width: 120px;
+  display: inline-block;
+}
+
+.order-section .card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.order-section .card-header {
+  background-color: #d0a2da;
+  color: rgb(29, 27, 27);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.order-section .card-footer {
+  padding: 15px;
+  text-align: right;
+}
+
+.order-section .btn-success {
+  background-color: #28a745;
+  border: none;
+  margin:  0 30px;
+}
+
+.order-section .btn-danger {
+  background-color: #dc3545;
+  border: none;
+  margin:  0 30px;
+}
+
+/*category section             */ 
+
+.cate-section .card-header {
+  background-color: #d0a2da;
+  color: rgb(29, 27, 27);
+}
+
+.cate-section .card-header button{
+  width: 80px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.cate-section .btn-danger,
+.cate-section .btn-primary {
+  border: none;
+  width: 27%;
+  margin: 5px;
+}
+
+/*list out item section --------------*/
+
+.display-item-section .list-item .rounded{
+  width: 50px;
+  height: 50px;
+}
+
+.display-item-section .list-item button{
+  width: 80px;
+  height: 40px;
+  margin: 0 10px;
+}

@@ -1,0 +1,46 @@
+.bg-image{
+    background-image: url('./../../assets/Bg-1.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-section{
+    margin: 30px 0;
+}
+
+.home-section .container{
+    padding: 50px;
+}
+
+.home-section .c-1 h1{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    color: brown;
+}
+
+.home-section .c-1 p{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.home-section .c-1 h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.home-section .c-1 li{
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.home-section .c-1 h6{
+    font-size: 20px;
+    line-height: 23px;
+    padding: 20px 0;
+}

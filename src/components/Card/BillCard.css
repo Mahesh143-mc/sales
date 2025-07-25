@@ -1,0 +1,229 @@
+/*after showing the content ---------------------*/
+
+.get-product-details.active{
+  display: none;
+}
+.billing-content {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-left: 40px;
+  max-width: 600px;
+  min-width: 490px;
+  height: 100vh;
+  background: rgb(233, 139, 24);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 20px;
+  border-radius: 0px;
+  z-index: 10000000;
+  overflow-y: auto;
+  transform: translateX(500px);
+  transition: transform 0.5s ease;
+}
+
+.billing-content.show {
+  transform: translateX(0px);
+}
+
+@keyframes showContent {
+  100% {
+    transform: translateX(600px);
+  }
+
+}
+
+.backgroundchange{
+  background: rgb(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+}
+
+.billing-content i{
+  cursor: pointer;
+  font-size: 34px;
+  color: #faf4f4;
+}
+
+.billing-content .shop-name {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.billing-content p {
+  font-size: 22px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.shop-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid #1010105a;
+  padding: 20px 12px;
+}
+
+.billing-content .shop-items,
+.billing-content .total-amont,
+.billing-content .submit-order{
+  background: #ffffff;
+}
+
+.billing-content .shop-items .image-content{
+  flex: 1;
+}
+
+.billing-content .shop-items .name-content{
+  flex: 2;
+}
+
+.billing-content .shop-items .rate-content{
+  flex: 2;
+}
+
+.billing-content .total-amt-content{
+  flex: 2;
+}
+
+.billing-content .close-icon{
+  flex: 1;
+}
+.shop-items .image-content img{
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 10px;
+}
+
+
+.shop-items .name-content h1 {
+  font-size: 16px;
+  margin: 0;
+  color: #010101;
+  text-align: center;
+}
+
+ .shop-items .rate-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+ .shop-items .rate-content .rate {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #010101;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.shop-items .rate-content h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #010101;
+}
+
+.shop-items .total-amt-content h1 {
+  font-size: 16px;
+  color: #010101;
+  margin: 0;
+  text-align: center;
+}
+
+ .billing-content .close-icon i{
+  color: #010101;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .total-amont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 18px;
+  color: #010101;
+  padding: 20px 0;
+}
+
+ .submit-order {
+  text-align: center;
+}
+
+ .submit-order{
+  text-align: right;
+  padding-right: 20px;
+  padding: 15px 20px;
+  border-top: 2px solid #0101014a;
+}
+
+ .submit-order button {
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 8px;
+}
+
+/* form content ---------------------*/
+
+.user-information{
+  font-size: 20px;
+  display: none;
+}
+
+.user-information.active{
+  display: block;
+}
+
+.amount-details {
+  margin-top: 20px;
+  padding: 10px;
+  background: #7b7676d5;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 0.1);  
+}
+
+.amount-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.amount-row:last-child {
+  border-bottom: none;
+}
+
+.amount-row span,
+.amount-row i,
+.amount-row .value{
+  color: #fafafa;
+  font-size: 18px;
+}
+
+#sumbit-btn{
+  margin: 20px 0 4px 0;
+  font-size: 20px;
+}
+
+.navigate-back{
+  text-align: center;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 540px) {
+
+   .billing-content {
+    max-width: 600px;
+    min-width: 300px;
+  }
+}
