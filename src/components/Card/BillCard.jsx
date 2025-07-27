@@ -22,8 +22,11 @@ function Card() {
     setIsOpen(!isOpen);
   };
 
+  
+
   const cardselectitems = useSelector((store) => store.cart.cardselectitems);
   const statusTab = useSelector((store) => store.cart.statusTab);
+  const statusTab2 = useSelector((store) => store.cart.statusTab2);
   const dispatch = useDispatch();
 
   const CallingTwoFunction = () =>{
@@ -33,12 +36,17 @@ function Card() {
       togglePanel();
     }
   }
+
   const handleTabCloseCart = () => {
     dispatch(toggleStatusTab());
   };
 
   const deleteCart = (productId) => {
     dispatch(removeFromCart(productId));
+  };
+
+  const handleOrderSuccessfullPage = () => {
+    dispatch(toggleStatusTab());
   };
 
 // display the total amount details
@@ -82,7 +90,6 @@ function Card() {
 
   const orderPlace = async (e) => {
     
-
     if (
       userDetail.name === "" ||
       userDetail.email === "" ||
@@ -129,6 +136,9 @@ function Card() {
         overalAmount: "",
       });
       toast.success("Order placed successfully", {duration: 3000});
+      handleOrderSuccessfullPage();
+      navigate("/submit");
+      
     }
     catch(error){
       console.log(error);

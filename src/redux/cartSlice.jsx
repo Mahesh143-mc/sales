@@ -28,7 +28,8 @@ export const cardSlice = createSlice({
             }else{
                 state.statusTab = false;
             }
-        },
+        }, 
+        
         removeFromCart(state, action) {
             const productIdToRemove = action.payload;
             state.cardselectitems = state.cardselectitems.filter(

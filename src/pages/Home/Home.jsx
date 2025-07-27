@@ -21,7 +21,8 @@ import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 
 import Logo from "../../assets/LOGO_PROJECT.png";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
+
 
 function Home() {
   var settings = {

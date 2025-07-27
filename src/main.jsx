@@ -7,12 +7,13 @@ import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'react-bootstrap';
 import { Provider } from 'react-redux';
-import store from './redux/store.jsx'
+import store from './redux/store.jsx';
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
-    
+     <HelmetProvider>
     <Provider store={store}>
       <BrowserRouter>
         <ThemeProvider>
@@ -20,6 +21,6 @@ root.render(
         </ThemeProvider>
         </BrowserRouter>
     </Provider>
-    
+    </HelmetProvider>
   </StrictMode>
 );

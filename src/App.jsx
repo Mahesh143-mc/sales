@@ -19,6 +19,7 @@ import MyState from "./context/myState";
 import ProtectedRouteAdmin from "./components/ProtectedRouteAdmin/ProtectedRouteAdmin";
 
 import toast, { Toaster } from "react-hot-toast";
+import OrderSuccess from "./pages/Ordersuccess/OrderSuccess";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/tips" element={<Tips />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/submit" element={<OrderSuccess />} />
 
           <Route
             path="/admin"

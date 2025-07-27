@@ -1,0 +1,43 @@
+.order-success {
+  width: 100%;
+  z-index: 90000;
+  overflow-y: auto;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 0;
+  overflow: hidden;
+   overflow-x: auto;
+}
+
+.order-success .inside-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px 60px;
+  border-radius: 20px;
+  pointer-events: auto;
+  border: 2px solid #e51212;
+}
+
+.order-success img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  pointer-events: auto;
+}
+
+.inside-order h2 {
+  font-size: 30px;
+  margin: 9px 0;
+  color: #f40505;
+}
+
+.order-success button{
+  margin: 20px 0;
+  pointer-events: visible;
+}

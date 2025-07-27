@@ -28,7 +28,6 @@ import { toggleStatusTab } from "../../redux/cartSlice"
 import { useContext, useEffect, useState } from "react";
 import { createSelector } from "@reduxjs/toolkit";
 
-
 function Product() {
   const [showCategory, setShowCategory] = useState(false);
   const [showBill, setShowBill] = useState(false);
@@ -51,6 +50,7 @@ function Product() {
 // handle open the billing section 
 
   const statusTab = useSelector((store) => store.cart.statusTab);
+  const statusTab2 = useSelector((store) => store.cart.statusTab2);
   const dispatchCart = useDispatch();
 
   const handleOpenTabCart = () => {
@@ -90,7 +90,9 @@ function Product() {
         quantityNumber: quantity,
       })
     );
-    toast.success("Added successfully");
+
+    dispatchCart(toggleStatusTab2());
+   
   };
 // only for input box after delete the item || its handling only input onchange values
 
